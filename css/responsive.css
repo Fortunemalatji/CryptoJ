@@ -1,0 +1,289 @@
+/* Common CSS styles */
+
+body {
+    margin: 0; /* Reset default margin */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+@media (max-width: 600px) {
+    .gallery {
+      padding: 10px;
+    }
+  }
+
+/* Media Query for small devices */
+@media only screen and (max-width: 768px) {
+    /* Adjustments for small screens go here */
+    .title,
+    .reserv {
+        display: none; /* Hide title and reserv elements */
+    }
+    .gallery {
+        padding: 10px;
+      }
+    .header-top {
+        width: 100%; /* Set the header width to 100% */
+        display: flex;
+        flex-direction: row; /* Set flex-direction to row */
+        align-items: center; /* Align items vertically */
+        justify-content: space-between; /* Distribute space between items */
+        padding: 0 20px; /* Add padding to create space */
+    }
+
+    .menu-icon {
+        position: absolute; /* Set the position to absolute */
+        top: 15px; /* Adjust the distance from the top */
+        right: 20px; /* Adjust the distance from the right */
+        z-index: 1000; /* Set a higher z-index to ensure it's above the header */
+    }
+
+    .image img {
+        width: 100px; /* Adjust the width of the image */
+        margin-bottom: 10px; /* Add some bottom margin for spacing */
+    }
+
+    .header-bottom {
+        display: none; /* Hide the bottom menu */
+    }
+    .title a,
+    .reserv a {
+        padding: 10px;
+    }
+
+    nav a {
+        padding: 10px; /* Adjust padding for small screens */
+    }
+
+    .info {
+        padding-left: 10px;
+    }
+
+    .info .hero {
+        font-size: 40px; /* Reduce font size for hero text */
+    }
+
+    .welcome {
+        text-align: center; /* Center-align the content */
+    }
+
+    .twel, .bwelc, .contactNow {
+        margin-bottom: 10px; /* Add some bottom margin for spacing */
+        transform: skewX(0deg);
+    }
+
+    .bwelc p {
+        font-size: 16px; /* Reduce font size for welcome message */
+    }
+
+    .twel p {
+        font-size: 30px; /* Reduce font size for business name */
+    }
+
+    .menu-icon {
+        display: block; /* Show the menu icon for small screens */
+    }
+
+    .navbar {
+        display: none; /* Hide the navigation menu by default for small screens */
+    }
+
+    .socials {
+        display: none; /* Hide social icons for small screens */
+    }
+
+    /* Footer adjustments */
+    .foot-top,
+    .foot-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .foot-top {
+        padding: 20px;
+    }
+
+    .address,
+    .workinghours {
+        margin-bottom: 20px;
+    }
+
+    .address p {
+        font-size: 14px;
+    }
+
+    .whours ul li {
+        font-size: 14px;
+    }/* Remaining adjustments for small screens remain the same */
+
+    
+}
+
+/* Media Query for medium devices */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Adjustments for medium screens go here */
+    .title,
+    .reserv {
+        display: none; /* Hide title and reserv elements */
+    }
+
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+      }
+      .contact-details,
+      .contact-form{
+        width: 90%;
+      }
+
+    .header-top,
+    .header-bottom {
+        width: 100%; /* Set the header width to 100% */
+        display: flex;
+        flex-direction: column; /* Set flex-direction to column */
+        align-items: center; /* Align items to center horizontally */
+    }
+
+    .menu-icon {
+        position: absolute; /* Set the position to absolute */
+        top: 15px; /* Adjust the distance from the top */
+        right: 20px; /* Adjust the distance from the right */
+        z-index: 1000; /* Set a higher z-index to ensure it's above the header */
+    }
+
+    .image img {
+        display: block; /* Show the image */
+        width: 100px; /* Adjust the width of the image */
+        margin-bottom: 10px; /* Add some bottom margin for spacing */
+    }
+
+    .title a,
+    .reserv a {
+        padding: 10px;
+    }
+
+    nav a {
+        padding: 10px; /* Adjust padding for small screens */
+    }
+
+    .info {
+        padding-left: 10px;
+    }
+
+    .info .hero {
+        font-size: 40px; /* Reduce font size for hero text */
+    }
+
+    .bwelc p {
+        font-size: 16px; /* Reduce font size for welcome message */
+    }
+
+    .twel p {
+        font-size: 30px; /* Reduce font size for business name */
+    }
+
+    .menu-icon {
+        display: block; /* Show the menu icon for small screens */
+    }
+
+    .navbar {
+        display: none; /* Hide the navigation menu by default for small screens */
+    }
+
+    .socials {
+        display: none; /* Hide social icons for small screens */
+    }
+
+    /* Footer adjustments */
+    .foot-top,
+    .foot-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .foot-top {
+        padding: 20px;
+    }
+
+    .address,
+    .workinghours {
+        margin-bottom: 20px;
+    }
+
+    .address p {
+        font-size: 14px;
+    }
+
+    .whours ul li {
+        font-size: 14px;
+    }/* Remaining adjustments for medium screens remain the same */
+}
+
+/* Media Query for large devices */
+/* Media Query for medium devices */
+
+/* Media Query for large devices */
+@media only screen and (min-width: 1025px) {
+    /* Adjustments for large screens go here */
+    .title,
+    .reserv {
+        width: 30%;
+        border-right: 1px solid #000;
+        border-bottom: none;
+    }
+
+    .header-top,
+    .header-bottom {
+        padding: 20px 5%;
+    }
+
+    .title a,
+    .reserv a {
+        padding: 20px;
+    }
+
+    nav a {
+        padding: 20px; /* Adjust padding for large screens */
+    }
+
+    .info {
+        padding-left: 20px;
+    }
+
+    .info .hero {
+        font-size: 60px;
+    }
+
+    .bwelc p {
+        font-size: 25px;
+    }
+
+    .twel p {
+        font-size: 50px;
+    }
+
+    .menu-icon {
+        display: none; /* Hide the menu icon for large screens */
+    }
+
+    .navbar {
+        display: block; /* Show the navigation menu for large screens */
+    }
+
+    .socials {
+        display: flex; /* Show social icons for large screens */
+    }
+}
+@media screen and (max-width: 768px) {
+    .stat {
+      flex-basis: 45%; /* Adjust width for smaller screens */
+    }
+  
+    .testimonial-content {
+      min-height: auto; /* Adjust minimum height for smaller screens */
+    }
+  }
