@@ -15,6 +15,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background: linear-gradient(135deg, #000000, #333333);
+
         }
 
         .container {
@@ -23,7 +25,7 @@
             min-width: 100%;
             margin: auto;
             padding: 20px;
-            background: linear-gradient(to right, #b8860b, #ffd700); /* Dark gold to light gold gradient */
+            background: linear-gradient(135deg, #000000, #333333);
         }
 
         .content {
@@ -48,7 +50,7 @@
         .info {
             margin-left: 20px;
             width: 600px;
-            background-color: rgba(255, 255, 255, 0.8);
+            background: linear-gradient(135deg, #000000, #333333);
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -78,7 +80,7 @@
         }
 
         .content-text {
-            background-color: rgba(255, 255, 255, 0.9);
+            background: linear-gradient(135deg, #000000, #333333);
             border-radius: 5px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
             padding: 20px;
@@ -103,6 +105,83 @@
         .button-container button:hover {
             background-color: rgb(49, 88, 187);
         }
+
+        .join {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #000000, #333333);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: transparent;
+            background: -webkit-linear-gradient(135deg, #C8A65B, #805922, #C8A65B);
+            -webkit-background-clip: text;
+            /* Apply gradient to text */
+            background-clip: text;
+            /* Apply gradient to text */
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .roadmap {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .step-number {
+            background-color: #ffd700;
+            color: transparent;
+            background: -webkit-linear-gradient(135deg, #C8A65B, #805922, #C8A65B);
+            -webkit-background-clip: text;
+            /* Apply gradient to text */
+            background-clip: text;
+            /* Apply gradient to text */
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 18px;
+            margin-right: 20px;
+        }
+
+        .step-description {
+            background: linear-gradient(135deg, #000000, #333333);
+            color: transparent;
+            background: -webkit-linear-gradient(135deg, #C8A65B, #805922, #C8A65B);
+            -webkit-background-clip: text;
+            /* Apply gradient to text */
+            background-clip: text;
+            /* Apply gradient to text */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            flex: 1;
+            font-size: 16px;
+        }
+
+        .home-link {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .home-link:hover {
+            color: #eee;
+        }
     </style>
 </head>
 
@@ -111,14 +190,15 @@
 
     <header>
 
-        <div class="header-bottom">
+
+        <div class="header-top">
 
             <div class="navbar">
                 <nav>
                     <strong>
-                        <a href="" class="Logo">CaptaCraft </a>
-                        <a href="" class="active">Home</a>
-                        <a href="">Services</a>
+                        <a href="" class="Logo">CryptoJ </a>
+                        <a href="index.html" >Home</a>
+                        <a href="index.html#invest">Services</a>
                         <div class="dropdown">
                             <a href="#" class="dropbtn">Pages &triangledown;</a>
                             <div class="dropdown-content">
@@ -127,7 +207,7 @@
                                 <a href="#">Page 3</a>
                             </div>
                         </div>
-                        <a href="about.html">About Us</a>
+                        <a href="#" class="active">About Us</a>
                         <a href="contactUs.html">Contact Us</a>
 
                     </strong>
@@ -138,57 +218,120 @@
                 <a href="path/to/your/file.pdf" download="filename.pdf" class="btn">Download APP</a>
             </div>
         </div>
+        <div class="header-bottom">
+
+            <div class="marquee-container">
+                <div class="marquee-text">
+                    <span class="stock-aapl">AAPL: $132.54 | +0.05%</span>
+                    <span class="stock-goog">GOOG: $2456.32 | -0.03%</span>
+                    <span class="stock-amzn">AMZN: $3345.67 | +0.02%</span>
+                    <span class="stock-msft">MSFT: $250.78 | +0.01%</span>
+                    <span class="stock-fb">FB: $301.45 | -0.04%</span>
+                    <span class="stock-nflx">NFLX: $512.76 | -0.01%</span>
+                    <span class="stock-tsla">TSLA: $742.89 | +0.03%</span>
+                    <span class="stock-nvda">NVDA: $612.34 | +0.06%</span>
+                    <span class="stock-amd">AMD: $95.67 | -0.02%</span>
+                </div>
+            </div>
+
+
+        </div>
     </header>
 
     <section>
         <img src="img/us1.png" alt="">
 
-    
 
-    <div class="container">
-        <div class="content">
-            <div class="info">
-                <div class="button-container">
-                    <button onclick="showContent('mission')" class="active" style="background-color: #ffd700; color: #333;">Mission</button>
-                    <button onclick="showContent('vision')" style="background-color: #b8860b; color: #fff;">Vision</button>
-                    <button onclick="showContent('values')" style="background-color: #ffd700; color: #333;">Values</button>
-                </div>
-    
-                <div class="content-text active" id="mission">
-                    <h2>Our Mission</h2>
-                    <p>At CapitalCraft, our mission is to empower individuals to achieve their financial goals through
-                        smart and sustainable investments. We believe that everyone deserves the opportunity to grow their
-                        wealth and secure their future, and we're dedicated to providing the guidance and resources
-                        necessary to make that happen.</p>
-                </div>
-    
-                <div class="content-text" id="vision">
-                    <h2>Our Vision</h2>
-                    <p>Our vision is to create a world where financial freedom is within reach for everyone. We envision a
-                        future where individuals have the knowledge, tools, and support they need to make confident
-                        investment decisions and build lasting wealth. Through our innovative solutions and unwavering
-                        commitment to excellence, we strive to make this vision a reality for our clients.</p>
-                </div>
-    
-                <div class="content-text" id="values">
-                    <h2>Our Values</h2>
-                    <p>At CapitalCraft, we are guided by a set of core values that shape our culture and define our
-                        approach to investing:</p>
-                    <ul>
-                        <li><strong>Integrity:</strong> We adhere to the highest ethical standards and always prioritize
-                            the interests of our clients.</li>
-                        <li><strong>Innovation:</strong> We embrace innovation and continuously seek new ways to deliver
-                            value to our clients and drive positive change in the investment industry.</li>
-                        <li><strong>Transparency:</strong> We believe in transparency and open communication, providing
-                            our clients with clear and honest information to make informed decisions.</li>
-                        <li><strong>Empowerment:</strong> We empower our clients with the knowledge, resources, and
-                            confidence they need to take control of their financial future and achieve their goals.</li>
-                    </ul>
+
+        <div class="container">
+            <div class="content">
+                <div class="info">
+                    <div class="button-container">
+                        <button onclick="showContent('mission')" class="active"
+                            style="background-color: #ffd700; color: #333;">Mission</button>
+                        <button onclick="showContent('vision')"
+                            style="background-color: #b8860b; color: #fff;">Vision</button>
+                        <button onclick="showContent('values')"
+                            style="background-color: #ffd700; color: #333;">Values</button>
+                    </div>
+
+                    <div class="content-text active" id="mission">
+                        <h2>Our Mission</h2>
+                        <p>At CryptoJ, our mission is to empower individuals to achieve their financial goals
+                            through
+                            smart and sustainable investments. We believe that everyone deserves the opportunity to grow
+                            their
+                            wealth and secure their future, and we're dedicated to providing the guidance and resources
+                            necessary to make that happen.</p>
+                    </div>
+
+                    <div class="content-text" id="vision">
+                        <h2>Our Vision</h2>
+                        <p>Our vision is to create a world where financial freedom is within reach for everyone. We
+                            envision a
+                            future where individuals have the knowledge, tools, and support they need to make confident
+                            investment decisions and build lasting wealth. Through our innovative solutions and
+                            unwavering
+                            commitment to excellence, we strive to make this vision a reality for our clients.</p>
+                    </div>
+
+                    <div class="content-text" id="values">
+                        <h2>Our Values</h2>
+                        <p>At CryptoJ, we are guided by a set of core values that shape our culture and define our
+                            approach to investing:</p>
+                        <ul>
+                            <li><strong>Integrity:</strong> We adhere to the highest ethical standards and always
+                                prioritize
+                                the interests of our clients.</li>
+                            <li><strong>Innovation:</strong> We embrace innovation and continuously seek new ways to
+                                deliver
+                                value to our clients and drive positive change in the investment industry.</li>
+                            <li><strong>Transparency:</strong> We believe in transparency and open communication,
+                                providing
+                                our clients with clear and honest information to make informed decisions.</li>
+                            <li><strong>Empowerment:</strong> We empower our clients with the knowledge, resources, and
+                                confidence they need to take control of their financial future and achieve their goals.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    <section class="join">
+        <div class="container">
+            <h2>Join Our Investment Platform</h2>
+            <div class="roadmap">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-description">Start your journey by downloading our app. Gain access to exclusive
+                        investment opportunities.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-description">Install the app on your device for easy access to your investment
+                        portfolio and real-time updates.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-description">Register for a free account to unlock personalized investment
+                        recommendations tailored to your financial goals.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-description">Explore our <a href="index.html" class="home-link">homepage</a> to
+                        discover diverse investment plans designed to maximize your returns.</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-description">Select the perfect plan and begin your journey towards financial
+                        success with us!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <footer>
         <div class="footer-container">
@@ -212,19 +355,19 @@
                 <h3>Follow Us</h3>
                 <div class="socials">
                     <a href=""><box-icon name='facebook' type='logo'></box-icon></a>
-    
+
                     <!-- Twitter -->
                     <a href=""><box-icon type='logo' name='twitter'></box-icon></a>
-    
+
                     <!-- Instagram -->
                     <a href=""><box-icon name='instagram' type='logo'></box-icon></a>
-    
+
                     <!-- Linkedin -->
                     <a href=""><box-icon name='linkedin' type='logo'></box-icon></a>
-    
+
                     <!-- Github -->
                     <a href=""><box-icon name='github' type='logo'></box-icon></a>
-    
+
                     <!-- Whatsapp -->
                     <a href=""><box-icon name='whatsapp' type='logo'></box-icon></a>
                 </div>

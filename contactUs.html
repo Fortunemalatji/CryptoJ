@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,10 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
   <style>
-    
+    section {
+      background: linear-gradient(135deg, #000000, #333333);
+
+    }
 
     .contact-section {
       max-width: 1200px;
@@ -17,17 +21,19 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #f9f9f9; /* Set background color here */
+      background: linear-gradient(135deg, #000000, #333333);
+
     }
 
     .contact-details,
     .contact-form {
       flex: 1;
       padding: 20px;
-      background-color: #fff;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
       margin: 10px;
+      background: linear-gradient(135deg, #000000, #333333);
+
     }
 
     .contact-details h2,
@@ -37,6 +43,12 @@
 
     .contact-details p {
       margin-bottom: 10px;
+      color: transparent;
+      background: -webkit-linear-gradient(135deg, #C8A65B, #805922, #C8A65B);
+      -webkit-background-clip: text;
+      /* Apply gradient to text */
+      background-clip: text;
+      /* Apply gradient to text */
     }
 
     .contact-form input,
@@ -52,7 +64,7 @@
     }
 
     .contact-form button {
-      background-color: rgb(49, 88, 187);
+      background: -webkit-linear-gradient(135deg, #C8A65B, #805922, #C8A65B);
       color: white;
       border: none;
       cursor: pointer;
@@ -67,122 +79,144 @@
         flex-direction: column;
         align-items: center;
       }
+
       .contact-details,
-      .contact-form{
+      .contact-form {
         width: 90%;
       }
     }
   </style>
 </head>
+
 <body>
 
 
 
   <header>
 
+
+    <div class="header-top">
+
+      <div class="navbar">
+        <nav>
+          <strong>
+            <a href="" class="Logo">CryptoJ </a>
+            <a href="" class="active">Home</a>
+            <a href="">Services</a>
+            <div class="dropdown">
+              <a href="#" class="dropbtn">Pages &triangledown;</a>
+              <div class="dropdown-content">
+                <a href="#">Page 1</a>
+                <a href="#">Page 2</a>
+                <a href="#">Page 3</a>
+              </div>
+            </div>
+            <a href="about.html">About Us</a>
+            <a href="contactUs.html">Contact Us</a>
+
+          </strong>
+        </nav>
+      </div>
+
+      <div class="Dbutton">
+        <a href="path/to/your/file.pdf" download="filename.pdf" class="btn">Download APP</a>
+      </div>
+    </div>
     <div class="header-bottom">
 
-        <div class="navbar">
-            <nav>
-                <strong>
-                    <a href="" class="Logo">CaptaCraft </a>
-                    <a href="index.html" >Home</a>
-                    <a href="">Services</a>
-                    <div class="dropdown">
-                        <a href="#" class="dropbtn">Pages &triangledown;</a>
-                        <div class="dropdown-content">
-                            <a href="#">Page 1</a>
-                            <a href="#">Page 2</a>
-                            <a href="#">Page 3</a>
-                        </div>
-                    </div>
-                    <a href="about.html" >About Us</a>
-                    <a href="#" class="active">Contact Us</a>
-
-                </strong>
-            </nav>
+      <div class="marquee-container">
+        <div class="marquee-text">
+          <span class="stock-aapl">AAPL: $132.54 | +0.05%</span>
+          <span class="stock-goog">GOOG: $2456.32 | -0.03%</span>
+          <span class="stock-amzn">AMZN: $3345.67 | +0.02%</span>
+          <span class="stock-msft">MSFT: $250.78 | +0.01%</span>
+          <span class="stock-fb">FB: $301.45 | -0.04%</span>
+          <span class="stock-nflx">NFLX: $512.76 | -0.01%</span>
+          <span class="stock-tsla">TSLA: $742.89 | +0.03%</span>
+          <span class="stock-nvda">NVDA: $612.34 | +0.06%</span>
+          <span class="stock-amd">AMD: $95.67 | -0.02%</span>
         </div>
+      </div>
 
-        <div class="Dbutton">
-            <a href="path/to/your/file.pdf" download="filename.pdf" class="btn">Download APP</a>
+
+    </div>
+  </header>
+  <section>
+    <img src="img/contactUs.png" alt="">
+
+
+    <div class="contact-section">
+
+      <div class="contact-details">
+        <h2>Contact Details</h2>
+        <p>Address: 123 Main Street, City, Country</p>
+        <p>Email: info@example.com</p>
+        <p>Phone: +1234567890</p>
+      </div>
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>123 Main Street</p>
+        <p>New York, NY 10001</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: info@example.com</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="socials">
+          <a href=""><box-icon name='facebook' type='logo'></box-icon></a>
+
+          <!-- Twitter -->
+          <a href=""><box-icon type='logo' name='twitter'></box-icon></a>
+
+          <!-- Instagram -->
+          <a href=""><box-icon name='instagram' type='logo'></box-icon></a>
+
+          <!-- Linkedin -->
+          <a href=""><box-icon name='linkedin' type='logo'></box-icon></a>
+
+          <!-- Github -->
+          <a href=""><box-icon name='github' type='logo'></box-icon></a>
+
+          <!-- Whatsapp -->
+          <a href=""><box-icon name='whatsapp' type='logo'></box-icon></a>
         </div>
-    </div>
-</header>
-<section>   
-   <img src="img/contactUs.png" alt="">
-
-
-  <div class="contact-section">
-
-    <div class="contact-details">
-      <h2>Contact Details</h2>
-      <p>Address: 123 Main Street, City, Country</p>
-      <p>Email: info@example.com</p>
-      <p>Phone: +1234567890</p>
-    </div>
-    <div class="contact-form">
-      <h2>Contact Us</h2>
-      <form>
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </div>
-</section>
-<footer>
-  <div class="footer-container">
-      <div class="footer-section">
-          <h3>Contact Us</h3>
-          <p>123 Main Street</p>
-          <p>New York, NY 10001</p>
-          <p>Phone: (123) 456-7890</p>
-          <p>Email: info@example.com</p>
       </div>
-      <div class="footer-section">
-          <h3>Quick Links</h3>
-          <ul>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="faq.html">FAQs</a></li>
-              <li><a href="contact.html">Contact</a></li>
-          </ul>
-      </div>
-      <div class="footer-section">
-          <h3>Follow Us</h3>
-          <div class="socials">
-              <a href=""><box-icon name='facebook' type='logo'></box-icon></a>
-
-              <!-- Twitter -->
-              <a href=""><box-icon type='logo' name='twitter'></box-icon></a>
-
-              <!-- Instagram -->
-              <a href=""><box-icon name='instagram' type='logo'></box-icon></a>
-
-              <!-- Linkedin -->
-              <a href=""><box-icon name='linkedin' type='logo'></box-icon></a>
-
-              <!-- Github -->
-              <a href=""><box-icon name='github' type='logo'></box-icon></a>
-
-              <!-- Whatsapp -->
-              <a href=""><box-icon name='whatsapp' type='logo'></box-icon></a>
-          </div>
-      </div>
-  </div>
-  <div class="footer-bottom">
+    </div>
+    <div class="footer-bottom">
       <p>&copy; 2024 Investment Company. All rights reserved.</p>
-  </div>
-</footer>
+    </div>
+  </footer>
 
-<script src="js/script.js"></script>
-    <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
