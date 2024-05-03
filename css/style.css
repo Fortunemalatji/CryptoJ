@@ -25,7 +25,7 @@ a{
     align-items: center;
     display: flex;
     height: 5%;
-    background: linear-gradient(135deg, #000000, #333333);
+    background: #0C071B;
     padding: 0px 5%;
     color: #fff;
 
@@ -47,51 +47,38 @@ a{
     color: #ec5;
 }
 
-
-.reserv{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 20%;
-    border-right: 1px solid #000;
-}
-.reserv a{
-    color: #000;
-    padding: 20px 20px;
-}
-.reserve a:hover{
-    color: #ec5;
-}
-
-
 .header-bottom{
 
-    background: linear-gradient(135deg, #333333, #000000);
+  background: linear-gradient(135deg, #C54ECC, #7C71FB);
     
+}
+.menubar {
+  display: none; 
 }
 
 nav a {
-  color: transparent; /* Set text color to transparent */
+  color: #fff; 
   padding-right: 40px;
+  margin-bottom: 40px;
   background: -webkit-linear-gradient(130deg, #C8A65B, #805922, #C8A65B);
-  -webkit-background-clip: text; /* Apply gradient to text */
-  background-clip: text; /* Apply gradient to text */
+  -webkit-background-clip: text; 
+  background-clip: text; 
 }
 
 nav a.Logo {
   font-size: 50px;
-  color: transparent;
-  background: -webkit-linear-gradient(135deg, #C8A65B, #805922, #C8A65B);
-  -webkit-background-clip: text; /* Apply gradient to text */
-  background-clip: text; /* Apply gradient to text */
+  color:transparent;
+  background: -webkit-linear-gradient(135deg, #C54ECC, #7C71FB);
+  -webkit-background-clip: text;
+  background-clip: text; 
   padding-top: 5px;
   border: 1px solid #ffd700;
-  transition: border-radius 0.5s ease; /* Add transition for border-radius */
+  transition: border-radius 0.5s ease; 
 }
 
 
 nav a.Logo:hover{
-  border-style: dashed; /* Circle the border when hovering */
+  border-style: dashed; 
 }
 
 nav a:hover{
@@ -101,10 +88,6 @@ nav a .Logo{
   color: #b8860b;
 }
 
-/* CSS styles */
-.navbar {
-    display: none; /* Hide the navigation menu by default */
-}
 
 .navbar.active {
     display: block; /* Show the navigation menu when active */
@@ -121,7 +104,7 @@ nav a .Logo{
   }
 
   .intro-section {
-    background: linear-gradient(135deg, #000000, #333333);
+    background: #0C071B;
     padding: 70px 0;
     text-align: center;
     background-size: cover;
@@ -142,7 +125,7 @@ nav a .Logo{
   .intro-section h2 {
     font-size: 60px;
     color: transparent;
-    background: -webkit-linear-gradient(135deg, #C8A65B, #805922, #C8A65B);
+    background: -webkit-linear-gradient(135deg, #C54ECC, #7C71FB);
     -webkit-background-clip: text; /* Apply gradient to text */
     background-clip: text; /* Apply gradient to text */    
     margin-bottom: 20px;
@@ -157,7 +140,8 @@ nav a .Logo{
   
   .intro-section .btn {
     display: inline-block;
-    background: linear-gradient(135deg, #C8A65B, #805922, #C8A65B);    color: #fff;
+    background: linear-gradient(135deg,#C54ECC,#7C71FB);   
+    color: #fff;
     padding: 15px 30px;
     border-radius: 25px;
     text-decoration: none;
@@ -240,12 +224,6 @@ section{
 .info a:hover{
     background-color: #ec5;
 }
-.image1{
-   height: 100vh;
-   /*clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);*/
-   border: 15px solid #ec5;
-
-}
 .menu{
     background-color: aliceblue;
 }
@@ -257,21 +235,8 @@ section{
     padding:0 30%;
     min-height: 20vh;
 }
-
-.top-men .locate{
-    border: 1px solid #ec5;
-    font-size: 18px;
-}
-.top-men .reserve{
-    border: 1px solid #ec5;
-    font-size: 18px;
-}
-.top-men .address{
-    border: 1px solid #ec5;
-    font-size: 18px;
-}
 #background-home{
-    background: linear-gradient(135deg, #ecd9c6, #b38f66, #ecd9c6);
+    background: #0C071B;
     background-size: cover;
     background-position: center;
     min-height: 70vh;
@@ -279,82 +244,7 @@ section{
     align-items: center;
     display: flex;
 }
-.twel{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    border: 3px solid #000;
-    box-shadow: 1px 3px 10px #ec5;
-    border-width: auto;
-    padding: 2%;
-    transform: SkewX(-10deg);
-    background-color: rgb(49, 88, 187);
-    width: 100%;
-}
 
-.twel p{
-    font-size: 60px;
-    color: #fff;
-}
-.bwelc{
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    border: 1px solid #000;
-    border-width: auto;
-    padding: 2%;
-    transform: SkewX(-10deg);
-    box-shadow: 1px 3px 1px #ec5;
-    background-color: #000;
-
-}
-
-.bwelc p{
-color: #fff;
-font-size: 30px;
-}
-.bwelc p a{
-    color: #fff;
-    display: none;
-
-}
-.bwelc p a{
-    display: block;
-    color:rgb(49, 88, 187);
-}
-.contactNow{
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    border: 3px solid #000;
-    border-width: auto;
-    padding: 2%;
-    transform: SkewX(-10deg);
-    box-shadow: 1px 3px 1px #ec5;
-    background-color: #fff;
-
-}
-.contactNow a{
-    color: #000;
-}
-.background-section {
-    background-image: url("img/home.jpg"); /* Replace 'background-image.jpg' with your image file path */
-    background-size: cover;
-    background-position: center;
-    height: 300px; /* Adjust the height as per your requirement */
-    color: #fff; /* Text color against the background */
-    text-align: center;
-    padding: 20px;
-}
-.welcome{
-    justify-content: space-between;
-    align-items: center;
-    display:flex ;
-    flex-direction: column;
-    color: white;
-}
 
 .foot-top{
     justify-content: space-between;
@@ -367,21 +257,6 @@ font-size: 30px;
     background: linear-gradient(135deg, #000000, #333333);
     /* Dark gold to light gold gradient */
  
-}
-.foot-top .cont{
-    border-bottom: 1px solid #ec5;
-    border-top: 1px solid #ec5;
-}
-
-.foot-top .whours{
-    border-bottom: 1px solid #ec5;
-    border-top: 1px solid #ec5;
-}
-.workinghours ul{
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-     justify-content: space-between
 }
 .copyright{
     justify-content: center;
@@ -647,68 +522,6 @@ font-size: 30px;
     }
   }
 
-  .brand-section {
-    background-color: #f2f2f2;
-    padding: 50px 0;
-    text-align: center;
-  }
-  .brand-img {
-    width: 100px;
-    margin: 20px;
-  }
-
-  /* Gallery Section Styles */
-  .gallery {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-  }
-
-  .gallery-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-  }
-
-  .gallery-item img {
-    width: 100%;
-    display: block;
-  }
-
-  .show {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .gallery-item:hover img {
-    transform: scale(1.05);
-  }
-
-  .infom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 30%;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 8px;
-    box-sizing: border-box;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
-  }
-
-  .gallery-item:hover .infom {
-    transform: translateY(-10%);
-  }
-
   .contact-section {
     max-width: 1200px;
     margin: 20px auto;
@@ -894,7 +707,7 @@ font-size: 30px;
 /* styles.css */
 
 footer {
-  background: linear-gradient(135deg, #333333, #000000);
+  background: #0C071C;
   text-align: center; /* Center-align text */
   color: #fff; /* Text color */
   padding: 50px 0; /* Padding top and bottom */
@@ -957,7 +770,7 @@ footer {
 .statistics {
   padding: 20px 0; /* Reduce padding to make the section smaller */
   text-align: center;
-  background: linear-gradient(135deg, #000000, #333333);
+  background: #0C071B;
   min-height: 40vh;
   text-align: center;
   padding-top: 100px
@@ -1002,14 +815,12 @@ footer {
 }
 /* styles.css */
 
-
-
 .testimonial {
   padding: 50px 0;
   text-align: center;
   min-width: 100%;
   min-height: auto;
-  background: linear-gradient(135deg, #000000, #333333);
+  background: #0C071B;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1087,7 +898,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #000000, #333333);
+  background: #0C071B;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1103,7 +914,8 @@ h1 .Logo{
   color: #fff;
 }
 .Dbutton a{
-  background: linear-gradient(135deg, #C8A65B, #805922, #C8A65B);  border: 1px solid #fff;
+  background: linear-gradient(135deg, #C54ECC,#7C71FB); 
+  border: 1px solid #fff;
   padding: 15px 10px;
   border-radius: 8px;
   color: #000;
@@ -1124,7 +936,7 @@ h1 .Logo{
   display: inline;
 }
 .investment-plans {
-  background: linear-gradient(135deg, #000000, #333333);
+  background: #0C071B;
   padding: 80px 0;
   text-align: center;
   color: #fff;
@@ -1136,8 +948,8 @@ h1 .Logo{
   margin-bottom: 40px;
   color: transparent;
   background: -webkit-linear-gradient(135deg, #C8A65B, #805922, #C8A65B);
-  -webkit-background-clip: text; /* Apply gradient to text */
-  background-clip: text; /* Apply gradient to text */
+  -webkit-background-clip: text; 
+  background-clip: text; 
 }
 
 .plans-container {
@@ -1218,7 +1030,7 @@ h1 .Logo{
 }
 .faqs {
   padding: 80px 0;
-  background: linear-gradient(135deg, #000000, #333333);
+  background: #0C071B;
 }
 
 .container {

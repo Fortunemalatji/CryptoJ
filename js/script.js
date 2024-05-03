@@ -117,4 +117,16 @@ function togglebar() {
         setInterval(nextTestimonial, 5000); // Change testimonial every 5 seconds (adjust as needed)
     });
         
-    
+    document.addEventListener("DOMContentLoaded", function() {
+      // Get the menu icon element
+      const menuIcon = document.querySelector('.menu-icon');
+      // Get the navbar element
+      const navbar = document.querySelector('.navbar');
+  
+      // Add click event listener to the menu icon
+      menuIcon.addEventListener('click', function() {
+          // Toggle the 'active' class on the navbar
+          navbar.classList.toggle('active');
+      });
+  });
+  

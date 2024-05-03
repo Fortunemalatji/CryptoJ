@@ -15,7 +15,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #000000, #333333);
+            background: #0C071B;
 
         }
 
@@ -25,7 +25,7 @@
             min-width: 100%;
             margin: auto;
             padding: 20px;
-            background: linear-gradient(135deg, #000000, #333333);
+            background: #0C071B;
         }
 
         .content {
@@ -50,7 +50,7 @@
         .info {
             margin-left: 20px;
             width: 600px;
-            background: linear-gradient(135deg, #000000, #333333);
+            background: #0C071B;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -80,7 +80,7 @@
         }
 
         .content-text {
-            background: linear-gradient(135deg, #000000, #333333);
+            background: #0C071B;
             border-radius: 5px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
             padding: 20px;
@@ -114,7 +114,7 @@
         .container {
             max-width: 800px;
             margin: 0 auto;
-            background: linear-gradient(135deg, #000000, #333333);
+            background:#0C071B;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -160,9 +160,9 @@
         }
 
         .step-description {
-            background: linear-gradient(135deg, #000000, #333333);
+            background: #0C071B;
             color: transparent;
-            background: -webkit-linear-gradient(135deg, #C8A65B, #805922, #C8A65B);
+            background: -webkit-linear-gradient(135deg, #C54ECC, #7C71FB);
             -webkit-background-clip: text;
             /* Apply gradient to text */
             background-clip: text;
@@ -198,8 +198,7 @@
                     <strong>
                         <a href="" class="Logo">CryptoJ </a>
                         <a href="index.html" >Home</a>
-                        <a href="index.html#invest">Services</a>
-                        
+                        <a href="index.html#invest">Services</a>                       
                         <a href="#" class="active">About Us</a>
                         <a href="contactUs.html">Contact Us</a>
 
@@ -208,7 +207,10 @@
             </div>
 
             <div class="Dbutton">
-                <a href="path/to/your/file.pdf" download="filename.pdf" class="btn">Download APP</a>
+                <a href="path/to/your/file.pdf" download="filename.pdf" class="btn">Launch APP</a>
+            </div>
+            <div class="menu-icon">
+                <img src="img/menu_icon.png" alt="">
             </div>
         </div>
         <div class="header-bottom">
@@ -232,7 +234,7 @@
     </header>
 
     <section>
-        <img src="img/us1.png" alt="">
+        <img class="about" src="img/us1.png" alt="">
 
 
 
@@ -370,6 +372,24 @@
             <p>&copy; 2024 Investment Company. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the menu icon element
+            const menuIcon = document.querySelector('.menu-icon');
+            // Get the navbar element
+            const navbar = document.querySelector('.navbar');
+
+            // Add click event listener to the menu icon
+            menuIcon.addEventListener('click', function () {
+                // Toggle the 'active' class on the navbar
+                navbar.classList.toggle('active');
+            });
+        });
+
+    </script>
+
 
     <script>
         function showContent(id) {

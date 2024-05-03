@@ -1,289 +1,184 @@
-/* Common CSS styles */
-
-body {
-    margin: 0; /* Reset default margin */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-@media (max-width: 600px) {
-    .gallery {
-      padding: 10px;
-    }
-  }
-
-/* Media Query for small devices */
+/* Mobile-first responsive styles */
 @media only screen and (max-width: 768px) {
-    /* Adjustments for small screens go here */
-    .title,
-    .reserv {
-        display: none; /* Hide title and reserv elements */
-    }
-    .gallery {
-        padding: 10px;
-      }
     .header-top {
-        width: 100%; /* Set the header width to 100% */
         display: flex;
-        flex-direction: row; /* Set flex-direction to row */
-        align-items: center; /* Align items vertically */
-        justify-content: space-between; /* Distribute space between items */
-        padding: 0 20px; /* Add padding to create space */
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
     }
-
-    .menu-icon {
-        position: absolute; /* Set the position to absolute */
-        top: 15px; /* Adjust the distance from the top */
-        right: 20px; /* Adjust the distance from the right */
-        z-index: 1000; /* Set a higher z-index to ensure it's above the header */
-    }
-
-    .image img {
-        width: 100px; /* Adjust the width of the image */
-        margin-bottom: 10px; /* Add some bottom margin for spacing */
-    }
-
-    .header-bottom {
-        display: none; /* Hide the bottom menu */
-    }
-    .title a,
-    .reserv a {
-        padding: 10px;
-    }
-
-    nav a {
-        padding: 10px; /* Adjust padding for small screens */
-    }
-
-    .info {
-        padding-left: 10px;
-    }
-
-    .info .hero {
-        font-size: 40px; /* Reduce font size for hero text */
-    }
-
-    .welcome {
-        text-align: center; /* Center-align the content */
-    }
-
-    .twel, .bwelc, .contactNow {
-        margin-bottom: 10px; /* Add some bottom margin for spacing */
-        transform: skewX(0deg);
-    }
-
-    .bwelc p {
-        font-size: 16px; /* Reduce font size for welcome message */
-    }
-
-    .twel p {
-        font-size: 30px; /* Reduce font size for business name */
-    }
-
-    .menu-icon {
-        display: block; /* Show the menu icon for small screens */
-    }
-
     .navbar {
-        display: none; /* Hide the navigation menu by default for small screens */
-    }
-
-    .socials {
-        display: none; /* Hide social icons for small screens */
-    }
-
-    /* Footer adjustments */
-    .foot-top,
-    .foot-bottom {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        align-items: flex-start;
+        display: none;
     }
-
-    .foot-top {
-        padding: 20px;
+    .Dbutton {
+        display: block;
+        position: relative;
+        padding: 10px 5px;
     }
-
-    .address,
-    .workinghours {
-        margin-bottom: 20px;
-    }
-
-    .address p {
-        font-size: 14px;
-    }
-
-    .whours ul li {
-        font-size: 14px;
-    }/* Remaining adjustments for small screens remain the same */
-
-    
-}
-
-/* Media Query for medium devices */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    /* Adjustments for medium screens go here */
-    .title,
-    .reserv {
-        display: none; /* Hide title and reserv elements */
-    }
-
-    .contact-section {
-        flex-direction: column;
-        align-items: center;
-      }
-      .contact-details,
-      .contact-form{
-        width: 90%;
-      }
-
-    .header-top,
-    .header-bottom {
-        width: 100%; /* Set the header width to 100% */
-        display: flex;
-        flex-direction: column; /* Set flex-direction to column */
-        align-items: center; /* Align items to center horizontally */
-    }
-
     .menu-icon {
-        position: absolute; /* Set the position to absolute */
-        top: 15px; /* Adjust the distance from the top */
-        right: 20px; /* Adjust the distance from the right */
-        z-index: 1000; /* Set a higher z-index to ensure it's above the header */
+        display: block;
     }
-
-    .image img {
-        display: block; /* Show the image */
-        width: 100px; /* Adjust the width of the image */
-        margin-bottom: 10px; /* Add some bottom margin for spacing */
-    }
-
-    .title a,
-    .reserv a {
-        padding: 10px;
-    }
-
-    nav a {
-        padding: 10px; /* Adjust padding for small screens */
-    }
-
-    .info {
-        padding-left: 10px;
-    }
-
-    .info .hero {
-        font-size: 40px; /* Reduce font size for hero text */
-    }
-
-    .bwelc p {
-        font-size: 16px; /* Reduce font size for welcome message */
-    }
-
-    .twel p {
-        font-size: 30px; /* Reduce font size for business name */
-    }
-
-    .menu-icon {
-        display: block; /* Show the menu icon for small screens */
-    }
-
-    .navbar {
-        display: none; /* Hide the navigation menu by default for small screens */
-    }
-
-    .socials {
-        display: none; /* Hide social icons for small screens */
-    }
-
-    /* Footer adjustments */
-    .foot-top,
-    .foot-bottom {
+    /* Hide navbar when menu icon is clicked */
+    .navbar.active nav {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        background-color: #333; /* Background color for the menu */
+        padding: 20px; /* Add padding for spacing */
+        position: absolute;
+        top: 70px; /* Adjust the top position to align with header */
+        left: 0;
+        right: 0;
+        z-index: 999; /* Ensure the menu appears above other elements */
+    }
+    .navbar.active nav a {
+        color: #fff; /* Text color for menu items */
+        text-decoration: none; /* Remove underline */
+        margin-bottom: 10px; /* Add margin between menu items */
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        text-align: center;
+        align-items: center;
+    }
+    /* Styling for hamburger icon */
+    .menu-icon .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px auto; /* Space between bars */
+        transition: 0.4s; /* Smooth transition */
+    }
+    /* Styling for active hamburger icon */
+    .menu-icon.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .menu-icon.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-icon.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
     }
 
-    .foot-top {
-        padding: 20px;
-    }
-
-    .address,
-    .workinghours {
-        margin-bottom: 20px;
-    }
-
-    .address p {
-        font-size: 14px;
-    }
-
-    .whours ul li {
-        font-size: 14px;
-    }/* Remaining adjustments for medium screens remain the same */
-}
-
-/* Media Query for large devices */
-/* Media Query for medium devices */
-
-/* Media Query for large devices */
-@media only screen and (min-width: 1025px) {
-    /* Adjustments for large screens go here */
-    .title,
-    .reserv {
-        width: 30%;
-        border-right: 1px solid #000;
-        border-bottom: none;
-    }
-
-    .header-top,
-    .header-bottom {
-        padding: 20px 5%;
-    }
-
-    .title a,
-    .reserv a {
-        padding: 20px;
-    }
-
-    nav a {
-        padding: 20px; /* Adjust padding for large screens */
-    }
-
-    .info {
+    /* Introduction Section */
+    .intro-section {
+        padding: 20px; /* Add padding to the section */
         padding-left: 20px;
     }
-
-    .info .hero {
-        font-size: 60px;
+    .container {
+        display: flex;
+        flex-direction: column-reverse; /* Reverse the order of flex items on small screens */
+        align-items: center; /* Center align items */
+    }
+    .intro-content {
+        text-align: center; /* Center align content */
+        margin-bottom: 20px; /* Add some space between intro content and intro image */
+    }
+    .intro-image {
+        text-align: center; /* Center align image */
+    }
+    .intro-image img {
+        max-width: 100%; /* Make sure the image doesn't exceed its container width */
+        height: auto; /* Maintain aspect ratio */
+    }
+    /* Investment Plans Section */
+    .investment-plans {
+        padding: 20px;
+    }
+    .plans-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; /* Ensure the plans container takes up the full width */
+    }
+    .plan {
+        width: 100%;
+        margin: 0 20px 20px; 
+    }
+    .plan h3 {
+        font-size: 20px; /* Adjusting font size for smaller screens */
+    }
+    .plan p {
+        font-size: 16px; /* Adjusting font size for smaller screens */
+    }
+    .plan .btn {
+        font-size: 12px; /* Adjusting font size for the button */
+        padding: 5px 10px; /* Adjusting padding for the button *//* Adjusting padding for the button */
+    }
+    /* FAQs Section */
+    .faq-question {
+        cursor: pointer;
+    }
+    .faq-answer {
+        display: none;
+    }
+    /* Testimonial Section */
+    .testimonial-slider {
+        display: flex;
+        flex-direction: column;
+    }
+    .testimonial-item {
+        margin-bottom: 20px;
     }
 
-    .bwelc p {
-        font-size: 25px;
+    .container {
+        padding: 0 20px; /* Adjust container padding for smaller screens */
     }
-
-    .twel p {
-        font-size: 50px;
+    .about {
+        display: none; /* Hide the image on smaller screens */
     }
-
-    .menu-icon {
-        display: none; /* Hide the menu icon for large screens */
+    .button-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
     }
-
-    .navbar {
-        display: block; /* Show the navigation menu for large screens */
+    .button-container button {
+        margin: 5px;
     }
-
-    .socials {
-        display: flex; /* Show social icons for large screens */
+    .content-text {
+        font-size: 16px; /* Set a base font size */
+        max-width: 100%; /* Ensure content does not overflow its container */
+        overflow-wrap: break-word; /* Wrap long words */
+        word-wrap: break-word; /* For older browser support */
+    }
+    /* Footer */
+    .footer-section {
+        text-align: center;
     }
 }
-@media screen and (max-width: 768px) {
-    .stat {
-      flex-basis: 45%; /* Adjust width for smaller screens */
+
+/* Tablet and desktop styles */
+@media only screen and (min-width: 769px) {
+    /* Header */
+
+    .Dbutton {
+        display: block;
     }
-  
-    .testimonial-content {
-      min-height: auto; /* Adjust minimum height for smaller screens */
+    .menu-icon {
+        display: none;
     }
-  }
+    /* Introduction Section */
+    
+    /* Investment Plans Section */
+    .plans-container {
+        flex-direction: row;
+    }
+    .plan {
+        margin-right: 20px;
+    }
+    /* FAQs Section */
+    .faq-question {
+        cursor: pointer;
+    }
+    .faq-answer {
+        display: none;
+    }
+    /* Testimonial Section */
+    .testimonial-slider {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    /* Footer */
+
+}
