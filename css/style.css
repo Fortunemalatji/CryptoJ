@@ -24,11 +24,13 @@ a{
     justify-content: space-between;
     align-items: center;
     display: flex;
-    height: 5%;
+    height: 15%;
     background: #0C071B;
     padding: 0px 5%;
     color: #fff;
-
+    box-shadow: 0 0 10px rgba(124, 120, 120, 0.5);
+    border-bottom:1px solid #8a8585;
+    border-bottom-style: dashed;
 }
 
 .title{
@@ -49,7 +51,7 @@ a{
 
 .header-bottom{
 
-  background: linear-gradient(135deg, #C54ECC, #7C71FB);
+  background: #0C071B;
     
 }
 .menubar {
@@ -60,6 +62,7 @@ nav a {
   color: #fff; 
   padding-right: 40px;
   margin-bottom: 40px;
+  margin-right: 40px;
   background: -webkit-linear-gradient(135deg, #C54ECC, #7C71FB);
   -webkit-background-clip: text; 
   background-clip: text; 
@@ -71,8 +74,7 @@ nav a.Logo {
   background: -webkit-linear-gradient(135deg, #C54ECC, #7C71FB);
   -webkit-background-clip: text;
   background-clip: text; 
-  padding-top: 5px;
-  border: 1px solid #ffd700;
+  border: 1px solid #fff;
   transition: border-radius 0.5s ease; 
 }
 
@@ -82,7 +84,10 @@ nav a.Logo:hover{
 }
 
 nav a:hover{
-    color: #ec5;
+  color:transparent;
+  background: -webkit-linear-gradient(135deg, #C54ECC, #7C71FB);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 nav a .Logo{
   color: #b8860b;
@@ -90,7 +95,7 @@ nav a .Logo{
 
 
 .navbar.active {
-    display: block; /* Show the navigation menu when active */
+    display: block; 
 }
 
 
@@ -126,8 +131,8 @@ nav a .Logo{
     font-size: 60px;
     color: transparent;
     background: -webkit-linear-gradient(135deg, #C54ECC, #7C71FB);
-    -webkit-background-clip: text; /* Apply gradient to text */
-    background-clip: text; /* Apply gradient to text */    
+    -webkit-background-clip: text; 
+    background-clip: text;   
     margin-bottom: 20px;
   }
   
@@ -154,7 +159,7 @@ nav a .Logo{
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Add shadow to the image */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); 
   }
   
   
@@ -255,7 +260,6 @@ section{
     padding-top: 40px; 
     padding-bottom: 20px;
     background: linear-gradient(135deg, #000000, #333333);
-    /* Dark gold to light gold gradient */
  
 }
 .copyright{
@@ -266,9 +270,8 @@ section{
     height: 15vh;
 }
   
-  /* Style the active link*/
   .active {
-    color: #ec5;
+    color: #6c757d;
   }
 
 
@@ -278,169 +281,9 @@ section{
     height: 100%;
   }
   
-  .section-header {
-    text-align: center;
-    margin: 0 auto;
-    padding: 40px 0;
-    font: 300 60px 'Oswald', sans-serif;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 6px;
-  }
-  
-  .contact-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 20px;
-    position: relative;
-    max-width: 840px;
-  }
-  
-  /* Left contact page */
-  .form-horizontal {
-    /*float: left;*/
-    max-width: 400px;
-    font-family: 'Lato';
-    font-weight: 400;
-  }
-  
-  .form-control, 
-  textarea {
-    max-width: 400px;
-    background-color: #000;
-    color: #fff;
-    letter-spacing: 1px;
-  }
-  
-  .send-button {
-    margin-top: 15px;
-    height: 34px;
-    width: 400px;
-    overflow: hidden;
-    transition: all .2s ease-in-out;
-  }
-  
-  .alt-send-button {
-    width: 400px;
-    height: 34px;
-    transition: all .2s ease-in-out;
-  }
-  
-  .send-text {
-    display: block;
-    margin-top: 10px;
-    font: 700 12px 'Lato', sans-serif;
-    letter-spacing: 2px;
-  }
-  
-  .alt-send-button:hover {
-    transform: translate3d(0px, -29px, 0px);
-  }
-  
-  /* Begin Right Contact Page */
-  .direct-contact-container {
-    max-width: 400px;
-  }
-  
-  /* Location, Phone, Email Section */
-  .contact-list {
-    list-style-type: none;
-    margin-left: -30px;
-    padding-right: 20px;
-  }
-  
-  .list-item {
-    line-height: 4;
-    color: #aaa;
-  }
-  
-  .contact-text {
-    font: 300 18px 'Lato', sans-serif;
-    letter-spacing: 1.9px;
-    color: #bbb;
-  }
-  
-  .place {
-    margin-left: 62px;
-  }
-  
-  .phone {
-    margin-left: 56px;
-  }
-  
-  .gmail {
-    margin-left: 53px;
-  }
-  
-  .contact-text a {
-    color: #bbb;
-    text-decoration: none;
-    transition-duration: 0.2s;
-  }
-  
-  .contact-text a:hover {
-    color: #fff;
-    text-decoration: none;
-  }
   
   
-  /* Social Media Icons */
-  .social-media-list {
-    position: relative;
-    font-size: 22px;
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-  }
   
-  .social-media-list li a {
-    color: #fff;
-  }
-  
-  .social-media-list li {
-    position: relative; 
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    margin: 10px 3px;
-    line-height: 60px;
-    border-radius: 50%;
-    color: #fff;
-    background-color: rgb(27,27,27);
-    cursor: pointer; 
-    transition: all .2s ease-in-out;
-  }
-  
-  .social-media-list li:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 50%;
-    opacity: 0;
-    box-shadow: 0 0 0 1px #fff;
-    transition: all .2s ease-in-out;
-  }
-  
-  .social-media-list li:hover {
-    background-color: #fff; 
-  }
-  
-  .social-media-list li:hover:after {
-    opacity: 1;  
-    transform: scale(1.12);
-    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
-  }
-  
-  .social-media-list li:hover a {
-    color: #000;
-  }
   
   .copyright {
     font: 200 14px 'Oswald', sans-serif;
@@ -453,174 +296,6 @@ section{
     border-color: rgba(255,255,255,.6);
   }
   
-  /* Begin Media Queries*/
-  @media screen and (max-width: 850px) {
-    .contact-wrapper {
-      display: flex;
-      flex-direction: column;
-    }
-    .direct-contact-container, .form-horizontal {
-      margin: 0 auto;
-    }  
-    
-    .direct-contact-container {
-      margin-top: 60px;
-      max-width: 300px;
-    }    
-    .social-media-list li {
-      height: 60px;
-      width: 60px;
-      line-height: 60px;
-    }
-    .social-media-list li:after {
-      width: 60px;
-      height: 60px;
-      line-height: 60px;
-    }
-  }
-  
-  @media screen and (max-width: 569px) {
-  
-    .direct-contact-container, .form-wrapper {
-      float: none;
-      margin: 0 auto;
-    }  
-    .form-control, textarea {
-      
-      margin: 0 auto;
-    }
-   
-    
-    .name, .email, textarea {
-      width: 280px;
-    } 
-    
-    .direct-contact-container {
-      margin-top: 60px;
-      max-width: 280px;
-    }  
-    .social-media-list {
-      left: 0;
-    }
-    .social-media-list li {
-      height: 55px;
-      width: 55px;
-      line-height: 55px;
-      font-size: 2rem;
-    }
-    .social-media-list li:after {
-      width: 55px;
-      height: 55px;
-      line-height: 55px;
-    }
-    
-  }
-  
-  @media screen and (max-width: 410px) {
-    .send-button {
-      width: 99%;
-    }
-  }
-
-  .contact-section {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f9f9f9;
-  }
-
-  .contact-details,
-  .contact-form {
-    flex: 1;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgb(49, 88, 187);
-    border-radius: 8px;
-    margin: 10px;
-  }
-
-  .contact-details h2,
-  .contact-form h2 {
-    margin-top: 0;
-  }
-
-  .contact-details p {
-    margin-bottom: 10px;
-  }
-
-  .contact-form input,
-  .contact-form textarea,
-  .contact-form button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-
-  .contact-form button {
-    background-color: rgb(49, 88, 187);
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-
-  .contact-form button:hover {
-    background-color: rgb(49, 88, 187);
-  }
-/*-----Contact Form----*/
-.contact-section {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-}
-
-.contact-details,
-.contact-form {
-  flex-basis: 45%;
-}
-
-.contact-details h2,
-.contact-form h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.contact-details p {
-  margin-bottom: 10px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.contact-form textarea {
-  height: 150px;
-}
-
-.contact-form button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #0056b3;
-}
 /*----Testimonials----*/
 #testimonials {
   background-color: #f9f9f9;
@@ -647,16 +322,10 @@ section{
   -webkit-overflow-scrolling: touch;
 }
 
-.testimonial {
-  flex: 0 0 auto;
-  margin: 0 10px;
-  width: 400px;
-  scroll-snap-align: start;
-}
+
 
 .testimonial-content {
-  background-color: #fff;
-  border-radius: 8px;
+  
   padding: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   text-align: left;
@@ -680,37 +349,13 @@ section{
   color: #777;
 }
 
-.scroll-arrows {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-}
-
-.prev-arrow,
-.next-arrow {
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.prev-arrow {
-  float: left;
-}
-
-.next-arrow {
-  float: right;
-}
-.testimonial-container::-webkit-scrollbar {
-  display: none;
-}
-
 /* styles.css */
 
 footer {
   background: #0C071C;
-  text-align: center; /* Center-align text */
-  color: #fff; /* Text color */
-  padding: 50px 0; /* Padding top and bottom */
+  text-align: center; 
+  color: #fff;
+  padding: 50px 0; 
 }
 
 .footer-container {
@@ -722,7 +367,7 @@ footer {
 
 .footer-section {
   flex: 1;
-  padding: 0 20px; /* Add padding between sections */
+  padding: 0 20px; 
 }
 
 .footer-section h3 {
@@ -743,19 +388,6 @@ footer {
   margin-bottom: 5px;
 }
 
-.social-media {
-  padding-left: 0;
-}
-
-.social-media li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.social-media li a {
-  color: #fff; /* Social media icon color */
-  font-size: 1.5em;
-}
 
 .footer-bottom {
   padding: 10px 0;
@@ -765,10 +397,10 @@ footer {
 .footer-bottom p {
   margin: 0;
 }
-/* styles.css */
+/* stats */
 
 .statistics {
-  padding: 20px 0; /* Reduce padding to make the section smaller */
+  padding: 20px 0; 
   text-align: center;
   background: #0C071B;
   min-height: 40vh;
@@ -785,43 +417,48 @@ footer {
 .stat {
   margin: 20px;
   border-radius: 10px;
-  padding: 10px; /* Reduce padding to make the statistic boxes smaller */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  transition: transform 0.3s ease; /* Add transition for hover effect */
+  padding: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease; 
 }
 
 .stat:hover {
-  transform: scale(1.05); /* Enlarge statistic box on hover */
+  transform: scale(1.05); 
 }
 
 .stat i {
-  font-size: 64px; /* Enlarge the size of the icons */
+  font-size: 64px; 
   margin-bottom: 10px;
   color: transparent;
   background: -webkit-linear-gradient(135deg, #C54ECC, #7C71FB);
-  -webkit-background-clip: text; /* Apply gradient to text */
-  background-clip: text; /* Apply gradient to text */
+  -webkit-background-clip: text; 
+  background-clip: text; 
 }
 .stat h3 {
-  font-size: 18px; /* Reduce font size of the titles */
+  font-size: 18px; 
   margin-bottom: 5px;
-  color: #fff; /* Title color */
+  color: #fff;
 }
 
 .stat p {
-  font-size: 20px; /* Reduce font size of the values */
+  font-size: 20px; 
   font-weight: bold;
-  color: #fff; /* Value color */
+  color: #fff; 
 }
-/* styles.css */
+/* testimonials */
 
 .testimonial {
   padding: 50px 0;
   text-align: center;
   min-width: 100%;
   min-height: auto;
-  background: #0C071B;
-  display: flex;
+  background-color: #0C071B;
+  background-image: 
+      linear-gradient(45deg, transparent 25%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.1) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1)),
+      linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.1) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1)),
+      linear-gradient(135deg, transparent 25%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.1) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1)),
+      linear-gradient(-135deg, transparent 25%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.1) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1));
+  background-size: 40px 40px;  border-radius: 8px;  display: flex;
   flex-direction: column;
   align-items: center;
 
@@ -829,28 +466,28 @@ footer {
 
 .testimonial-slider {
   position: relative;
-  max-width: 800px; /* Set maximum width of the testimonial slider */
+  max-width: 800px; 
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .testimonial-item {
-  display: none; /* Hide testimonial items by default */
+  display: none; 
   text-align: center;
   justify-content: center;
-  width: 100%; /* Set width of testimonial items */
+  width: 100%; 
 }
 
 .testimonial-content {
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-  border-radius: 20px; /* Rounded corners */
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 20px; 
   padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Glassmorphism effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
   text-align: center;
-  max-width: 600px; /* Set maximum width of the testimonial content */
+  max-width: 600px; 
   min-height: 450px;
-  margin: 0 auto; /* Center the testimonial content horizontally */
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -858,9 +495,9 @@ footer {
 }
 
 .testimonial-content img {
-  width: 400px; /* Set width of the client avatar */
-  border-radius: 30%; /* Make the avatar circular */
-  margin-bottom: 20px; /* Add margin below the avatar */
+  width: 400px; 
+  border-radius: 30%; 
+  margin-bottom: 20px; 
 }
 
 .quote {
@@ -869,8 +506,8 @@ footer {
     font-size: 20em;
     color: transparent;
     background: -webkit-linear-gradient(135deg, #C54ECC, #7C71FB);
-    -webkit-background-clip: text; /* Apply gradient to text */
-    background-clip: text; /* Apply gradient to text */
+    -webkit-background-clip: text; 
+    background-clip: text; 
 
 }
 
@@ -880,18 +517,20 @@ footer {
 
 /* Animation */
 .testimonial-item.active {
-  display: block; /* Display active testimonial item */
-  animation: fadeIn 1s ease; /* Fade-in animation */
+  display: block; 
+  animation: fadeIn 1s ease; 
 }
 
 @keyframes fadeIn {
   from {
-      opacity: 0; /* Start from opacity 0 */
+      opacity: 0; 
   }
   to {
-      opacity: 1; /* Fade in to opacity 1 */
+      opacity: 1; 
   }
 }
+
+/* page loader */
 #loading-screen {
   position: fixed;
   top: 0;
@@ -902,23 +541,22 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* ensure it's above other elements */
+  z-index: 9999; 
 }
 
 #loading-screen img {
-  width: 100px; /* Adjust the width and height as needed */
+  width: 100px; 
   height: 100px;
 }
 
-h1 .Logo{
-  color: #fff;
-}
+
 .Dbutton a{
   background: linear-gradient(135deg, #C54ECC,#7C71FB); 
   border: 1px solid #fff;
   padding: 15px 10px;
   border-radius: 8px;
   color: #000;
+  font-weight: bold;
 }
 .Dbutton a:hover{
   background-color: #b8860b;
@@ -930,15 +568,21 @@ h1 .Logo{
   color: #000;
 }
 
-/* Show the arrow when the button is hovered over */
 .btn:hover .arrow {
   color: #000;
   display: inline;
 }
+
+/*investment plans*/
 .investment-plans {
   padding: 50px 0;
-  background: linear-gradient(to right, #404040, #808080);
-  text-align: center;
+  background-color: #0C071B;
+  background-image: 
+      linear-gradient(45deg, transparent 25%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.1) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1)),
+      linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.1) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1)),
+      linear-gradient(135deg, transparent 25%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.1) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1)),
+      linear-gradient(-135deg, transparent 25%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.1) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1));
+  background-size: 40px 40px;  text-align: center;
 }
 
 .plans-container {
@@ -985,7 +629,6 @@ h1 .Logo{
   background-color: #555;
 }
 
-/* Popup styles */
 .popup {
   display: none;
   position: absolute;
@@ -1005,9 +648,12 @@ h1 .Logo{
   right: 10px;
   cursor: pointer;
 }
+
+/*-----frequently asked question----*/
 .faqs {
   padding: 80px 0;
   background: #0C071B;
+  min-height: auto;
 }
 
 .container {
@@ -1021,8 +667,8 @@ h2 {
   margin-bottom: 30px;
   color: transparent;
   background: -webkit-linear-gradient(135deg, #C54ECC, #7C71FB);
-  -webkit-background-clip: text; /* Apply gradient to text */
-  background-clip: text; /* Apply gradient to text */
+  -webkit-background-clip: text; 
+  background-clip: text; 
 }
 
 .faq-item {
@@ -1038,8 +684,9 @@ h2 {
   font-size: 24px;
   color: transparent;
   background: -webkit-linear-gradient(135deg, #C54ECC, #7C71FB);
-  -webkit-background-clip: text; /* Apply gradient to text */
-  background-clip: text; /* Apply gradient to text */  margin-bottom: 15px;
+  -webkit-background-clip: text; 
+  background-clip: text;  
+  margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1049,18 +696,23 @@ h2 {
   font-size: 13px;
   color: #333;
   line-height: 1.6;
-  display: none; /* Hide answer by default */
+  display: none; 
 }
 
 .arrow {
-  color: #b8860b; /* Set arrow color */
-  font-size: 20px; /* Adjust arrow size */
-  transition: transform 0.3s ease; /* Add transition for smooth rotation */
+  color: #b8860b; 
+  font-size: 20px; 
+  transition: transform 0.3s ease; 
 }
 
 .rotate {
   transform: rotate(180deg);
-}  .marquee-container {
+
+} 
+
+  /*----slider----*/
+
+.marquee-container {
     width: 100%;
     height:5%;
     overflow: hidden;
@@ -1078,10 +730,10 @@ h2 {
 
   @keyframes marqueeAnimation {
     0% {
-      margin-left: 100%; /* Start offscreen */
+      margin-left: 100%; 
     }
     100% {
-      margin-left: -100%; /* Move all the way to the left */
+      margin-left: -100%; 
     }
   }
 
@@ -1090,48 +742,18 @@ h2 {
     animation-play-state: paused;
   }
 
-  /* Different font and color for each currency */
+  /* Different font and color for each stock */
   .currency-eur {
     font-family: Arial, sans-serif;
-    color: #007bff; /* Blue */
+    color: #007bff; 
   }
 
   .stock-aapl {
     font-family: Georgia, serif;
-    color: #28a745; /* Green */
+    color: #28a745; 
   }
 
   .stock-nflx {
     font-family: Verdana, Geneva, sans-serif;
-    color: #dc3545; /* Red */
-  }
-
-  .currency-jpy {
-    font-family: 'Courier New', Courier, monospace;
-    color: #ffc107; /* Yellow */
-  }
-
-  .currency-chf {
-    font-family: 'Times New Roman', Times, serif;
-    color: #6610f2; /* Purple */
-  }
-
-  .currency-aud {
-    font-family: 'Lucida Console', Monaco, monospace;
-    color: #17a2b8; /* Teal */
-  }
-
-  .currency-cad {
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    color: #fd7e14; /* Orange */
-  }
-
-  .currency-nzd {
-    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-    color: #20c997; /* Cyan */
-  }
-
-  .currency-cny {
-    font-family: Impact, Charcoal, sans-serif;
-    color: #6c757d; /* Gray */
+    color: #dc3545; 
   }
