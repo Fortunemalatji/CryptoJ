@@ -66,10 +66,15 @@
     }
     .container {
         display: flex;
-        flex-direction: column-reverse; /* Reverse the order of flex items on small screens */
+        flex-direction: column; /* Reverse the order of flex items on small screens */
         align-items: center; /* Center align items */
     }
     .intro-content {
+        padding-left: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         text-align: center; /* Center align content */
         margin-bottom: 20px; /* Add some space between intro content and intro image */
     }
