@@ -52,6 +52,7 @@ a{
 .header-bottom{
 
   background: #0C071B;
+  border:1px solid #000;
     
 }
 .menubar {
@@ -155,7 +156,9 @@ nav a .Logo{
     color: #000;
   }
   
+
   .intro-image img {
+    background:#000;
     max-width: 100%;
     height: auto;
     border-radius: 10px;
