@@ -14,8 +14,8 @@
 
   <style>
     section {
-       background: -webkit-linear-gradient(135deg, #C54ECC, #7C71FB);
-       min-height: 30vh;
+      background: -webkit-linear-gradient(135deg, #C54ECC, #7C71FB);
+      min-height: 30vh;
 
     }
 
@@ -81,8 +81,9 @@
 
     @media screen and (max-width: 768px) {
       .about {
-        max-width: 100%; 
+        max-width: 100%;
       }
+
       .contact-section {
         flex-direction: column;
         align-items: center;
@@ -109,7 +110,7 @@
         <nav>
           <strong>
             <a href="" class="Logo">CryptoJ </a>
-            <a href="index.html" >Home</a>
+            <a href="index.html">Home</a>
             <a href="index.html#invest">Services</a>
             <!--<div class="dropdown">
               <a href="#" class="dropbtn">Pages &triangledown;</a>
@@ -131,21 +132,30 @@
       </div>
       <div class="menu-icon">
         <img src="img/menu_icon.png" alt="">
-    </div>
+      </div>
     </div>
     <div class="header-bottom">
 
       <div class="marquee-container">
         <div class="marquee-text">
-          <span class="stock-aapl">AAPL: $132.54 | +0.05%</span>
-          <span class="stock-goog">GOOG: $2456.32 | -0.03%</span>
-          <span class="stock-amzn">AMZN: $3345.67 | +0.02%</span>
-          <span class="stock-msft">MSFT: $250.78 | +0.01%</span>
-          <span class="stock-fb">FB: $301.45 | -0.04%</span>
-          <span class="stock-nflx">NFLX: $512.76 | -0.01%</span>
-          <span class="stock-tsla">TSLA: $742.89 | +0.03%</span>
-          <span class="stock-nvda">NVDA: $612.34 | +0.06%</span>
-          <span class="stock-amd">AMD: $95.67 | -0.02%</span>
+          <span class="stock-btc" style="color: #FF5733;">BTC: $40,000.54 | <span
+              style="color: #008000;">+0.05%</span></span>
+          <span class="stock-eth" style="color: #C70039;">ETH: $2,500.32 | <span
+              style="color: #FF0000;">-0.03%</span></span>
+          <span class="stock-bch" style="color: #900C3F;">BCH: $800.67 | <span
+              style="color: #008000;">+0.02%</span></span>
+          <span class="stock-ltc" style="color: #581845;">LTC: $180.78 | <span
+              style="color: #008000;">+0.01%</span></span>
+          <span class="stock-xrp" style="color: #FFC300;">XRP: $1.45 | <span
+              style="color: #FF0000;">-0.04%</span></span>
+          <span class="stock-dot" style="color: #DAF7A6;">DOT: $30.76 | <span
+              style="color: #FF0000;">-0.01%</span></span>
+          <span class="stock-ada" style="color: #FF5733;">ADA: $1.89 | <span
+              style="color: #008000;">+0.03%</span></span>
+          <span class="stock-link" style="color: #C70039;">LINK: $35.34 | <span
+              style="color: #008000;">+0.06%</span></span>
+          <span class="stock-uni" style="color: #900C3F;">UNI: $25.67 | <span
+              style="color: #FF0000;">-0.02%</span></span>
         </div>
       </div>
 
@@ -222,19 +232,19 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-        // Get the menu icon element
-        const menuIcon = document.querySelector('.menu-icon');
-        // Get the navbar element
-        const navbar = document.querySelector('.navbar');
+      // Get the menu icon element
+      const menuIcon = document.querySelector('.menu-icon');
+      // Get the navbar element
+      const navbar = document.querySelector('.navbar');
 
-        // Add click event listener to the menu icon
-        menuIcon.addEventListener('click', function () {
-            // Toggle the 'active' class on the navbar
-            navbar.classList.toggle('active');
-        });
+      // Add click event listener to the menu icon
+      menuIcon.addEventListener('click', function () {
+        // Toggle the 'active' class on the navbar
+        navbar.classList.toggle('active');
+      });
     });
 
-</script>
+  </script>
 
   <script src="js/script.js"></script>
   <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>

@@ -78,6 +78,10 @@
         text-align: center; /* Center align content */
         margin-bottom: 20px; /* Add some space between intro content and intro image */
     }
+
+    .intro-content h2{
+        font-size: 40px;
+    }
     .intro-image {
         text-align: center; /* Center align image */
     }
