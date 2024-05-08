@@ -1,93 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator-interest</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-
+    <title>Currency Converter</title>
     <style>
-        section {
-            background-color: #0C071B;
-            background-image:
-                linear-gradient(45deg, transparent 25%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.1) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1)),
-                linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.1) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1)),
-                linear-gradient(135deg, transparent 25%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.1) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1)),
-                linear-gradient(-135deg, transparent 25%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.1) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1));
-            background-size: 40px 40px;
-            padding: 40px 0;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            border-radius: 8px;
-
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-top: 0;
-        }
-
-        form {
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            font-size: 1.2rem;
-            margin-bottom: 5px;
-        }
-
-        input[type="number"] {
-            width: 100%;
-            padding: 8px;
-            font-size: 1rem;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-
-        button {
-            font-size: 1rem;
-            padding: 8px 20px;
-            background: linear-gradient(135deg, #C54ECC, #7C71FB);
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background: linear-gradient(135deg, #7C71FB, #C54ECC);
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        th,
-        td {
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-            text-align: left;
-        }
-
-        th {
-            background: #0C071B;
-            color: #fff;
-        }
-
-        tr:hover {
-            background-color: #f5f5f5;
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
         }
 
         .container {
@@ -212,7 +133,6 @@
         <button id="convertBtn" class="converter-btn">Convert</button>
         <p id="result"></p>
     </div>
-    
 
     <footer>
         <div class="footer-container">
@@ -256,35 +176,38 @@
             <p>&copy; 2024 CryptoJ. All rights reserved. <a href="TCs.html">Terms and Conditions Apply</a></p>
         </div>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-    $("#convertBtn").on("click", function () {
-        convertCurrency();
-    });
+    <script>
+        $("#convertBtn").on("click", function () {
+            convertCurrency();
+        });
 
-    function convertCurrency() {
-        var amount = $("#amount").val();
-        var fromCurrency = $("#fromCurrency").val();
-        var toCurrency = $("#toCurrency").val();
+        function convertCurrency() {
+            var amount = $("#amount").val();
+            var fromCurrency = $("#fromCurrency").val();
+            var toCurrency = $("#toCurrency").val();
 
-        $.ajax({
-            url: "https://api.exchangerate-api.com/v4/latest/" + fromCurrency,
-            dataType: "json",
-            success: function (response) {
-                var rate = response.rates[toCurrency];
-                if (rate) {
+            var query = fromCurrency + "_" + toCurrency;
+
+            $.ajax({
+                url: "https://open.er-api.com/v6/latest",
+                data: {
+                    base: fromCurrency,
+                    symbols: toCurrency
+                },
+                dataType: "json",
+                success: function (response) {
+                    var rate = response.rates[toCurrency];
                     var result = amount * rate;
                     $("#result").text(amount + " " + fromCurrency + " = " + result.toFixed(2) + " " + toCurrency);
-                } else {
-                    $("#result").text("Error: Currency conversion not available.");
+                },
+                error: function () {
+                    $("#result").text("Error: Unable to fetch exchange rate.");
                 }
-            },
-            error: function () {
-                $("#result").text("Error: Unable to fetch exchange rates.");
-            }
-        });
-    }
-</script>
+            });
+        }
+    </script>
 
 
     <script>
@@ -308,7 +231,6 @@
         }
     </script>
     <script src="https://www.cryptohopper.com/widgets/js/script"></script>
-
 </body>
 
 </html>

@@ -161,6 +161,46 @@
         .home-link:hover {
             color: #eee;
         }
+
+        .more-info {
+            background-color: #0C071B;
+            background-image:
+                linear-gradient(45deg, transparent 25%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.1) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1)),
+                linear-gradient(-45deg, transparent 25%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.1) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1)),
+                linear-gradient(135deg, transparent 25%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.1) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1)),
+                linear-gradient(-135deg, transparent 25%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.1) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1));
+            background-size: 40px 40px;
+            /* Light gray background */
+            padding: 40px 20px;
+            /* Add some padding for content */
+            text-align: center;
+            /* Center-align the text */
+        }
+
+        .more-info .container {
+            max-width: 800px;
+            /* Limit the width of the content */
+            margin: 0 auto;
+            /* Center the content horizontally */
+            font-size: 18px;
+            /* Set the font size */
+            line-height: 1.6;
+            /* Increase line height for readability */
+            color: #444;
+            /* Dark gray text color */
+        }
+
+        .more-info .subhead {
+            font-size: 24px;
+            /* Larger font size for the subhead */
+            margin-bottom: 20px;
+            /* Add space below the subhead */
+        }
+
+        .more-info .content br {
+            display: none;
+            /* Hide line breaks to control spacing with margins */
+        }
     </style>
 </head>
 
@@ -202,6 +242,50 @@
     <section>
         <img class="about" src="img/us1.png" alt="">
 
+        <section class="more-info">
+            <div class="container">
+                <h2 class="subhead">Welcome to CryptoJ</h2>
+                <div class="content">
+                    Welcome to CryptoJ, your gateway to cutting-edge cryptocurrency trading powered by artificial
+                    intelligence
+                    and
+                    machine learning. At CryptoJ, we're pioneering automated arbitrage trading systems tailored
+                    specifically for
+                    the
+                    dynamic cryptocurrency market. <br>
+
+                    Our team of seasoned developers, traders, and market analysts harness the latest advancements in AI
+                    and ML
+                    to
+                    craft innovative solutions that empower traders to capitalize on price differentials across
+                    exchanges. With
+                    CryptoJ, you'll have the tools to optimize profits and thrive in your trading ventures like never
+                    before.
+                    <br>
+
+                    Our user-friendly app leverages AI and ML algorithms to execute trades swiftly and intelligently,
+                    using
+                    USDT, a
+                    stablecoin pegged to the US dollar, for seamless transactions. This ensures that your trades are
+                    executed
+                    efficiently, minimizing the volatility associated with other cryptocurrencies. <br>
+
+                    At CryptoJ, exceptional customer service is at the core of our mission. We understand the
+                    intricacies of the
+                    cryptocurrency landscape and offer personalized support to every client. Whether you're an
+                    experienced
+                    trader or
+                    just beginning your journey, we're here to guide you toward achieving your trading goals. <br>
+
+                    Thank you for choosing CryptoJ as your partner in the exciting world of cryptocurrency trading. Get
+                    ready to
+                    experience the power of AI and ML firsthand as we work together to maximize your trading success and
+                    grow
+                    your
+                    investments.
+                </div>
+            </div>
+        </section>
 
 
         <div class="container">
@@ -292,14 +376,12 @@
         </div>
     </section>
 
-
-
     <footer>
         <div class="footer-container">
             <div class="footer-section">
                 <h3>Contact Us</h3>
                 <p>CryptoJ</p>
-       
+
             </div>
             <div class="footer-section">
                 <h3>Quick Links</h3>
