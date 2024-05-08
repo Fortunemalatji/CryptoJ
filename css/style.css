@@ -560,8 +560,7 @@ footer {
   font-weight: bold;
 }
 .Dbutton a:hover{
-  background-color: #b8860b;
-  color: #fff;
+  background: linear-gradient(135deg,#7C71FB, #C54ECC); 
   border-style: dashed;
 }
 .arrow {
