@@ -147,7 +147,7 @@
                     <strong>
                         <a href="index.html" class="Logo">CryptoJ </a>
                         <a href="index.html">Home</a>
-                        <a href="#invest">Services</a>
+                        <a href="index.html#invest">Services</a>
                         <a href="#" class="active">Calculator</a>
                         <a href="about.html">About Us</a>
                         <a href="contactUs.html">Contact Us</a>
@@ -302,7 +302,7 @@
             for (var i = 1; i <= 14; i++) {
                 var dailyInterest = balance * 0.05;
                 var endingBalance = balance + dailyInterest;
-                tableBody.innerHTML += "<tr><td>" + i + "</td><td>R " + balance.toFixed(2) + "</td><td>R " + dailyInterest.toFixed(2) + "</td><td>R " + endingBalance.toFixed(2) + "</td></tr>";
+                tableBody.innerHTML += "<tr><td>" + i + "</td><td>$ " + balance.toFixed(2) + "</td><td>$ " + dailyInterest.toFixed(2) + "</td><td>$ " + endingBalance.toFixed(2) + "</td></tr>";
                 balance = endingBalance;
             }
         }
