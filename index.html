@@ -4,424 +4,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CryptoJ</title>
+    <title>Under Construction</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <!--Style-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f0f4f8;
+            font-family: Arial, sans-serif;
+        }
 
-    <!--Icon-->
-    <link rel="icon" href="img/logo1-removebg-preview.png" type="image/x-icon">
+        .construction-container {
+            text-align: center;
+            padding: 20px;
+            max-width: 400px;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            animation: pulse 2s infinite;
+            border: 1px solid #ffcc00;
+            position: relative;
+            overflow: hidden;
+        }
 
-    <!--Awesome Fonts-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        .construction-container::before {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 204, 0, 0.4), transparent);
+            animation: rotate-glow 6s linear infinite;
+            z-index: -1;
+        }
 
+        .icon {
+            font-size: 3.5rem;
+            color: #ffcc00;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Glow animation */
+        @keyframes rotate-glow {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Pulse animation */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div id="loading-screen">
-        <img src="img/loading-7712_128.gif" alt="Loading...">
+    <div class="construction-container">
+        <i class="fas fa-hard-hat icon"></i>
+        <h1>Under Construction</h1>
+        <p>We're working hard to bring you something amazing. Stay tuned!</p>
     </div>
-    <header>
-
-
-        <div class="header-top">
-
-            <div class="navbar">
-                <nav>
-                    <strong>
-                        <a href="" class="Logo">CryptoJ </a>
-                        <a href="" class="active">Home</a>
-                        <a href="#invest">Services</a>
-                        <a href="Calculate.html">Calculator</a>
-                        <a href="about.html">About Us</a>
-                        <a href="contactUs.html">Contact Us</a>
-
-                    </strong>
-                </nav>
-            </div>
-
-            <div class="Dbutton">
-                <a href="ChryptoJ (2).apk" download="ChryptoJ (2).apk" class="btn">Launch APP</a>
-            </div>
-            <div class="menu-icon">
-                <img src="img/menu_icon.png" alt="">
-            </div>
-        </div>
-        <div class="header-bottom">
-
-            <div class="cryptohopper-web-widget" data-id="2"></div>
-
-        </div>
-    </header>
-
-    <section class="intro-section">
-        <div class="container">
-            <div class="intro-content">
-                <h2>Welcome to CryptoJ Investments</h2>
-                <p>Empowering your financial journey with tailored investment solutions.</p>
-                <a href="#contact" class="btn">Learn More <span class="arrow">&rarr;</span></a>
-            </div>
-            <div class="intro-image">
-                <img src="img/crypto.jpg" alt="Investment" />
-            </div>
-        </div>
-    </section>
-    <section class="investment-plans" id="invest">
-        <div class="container">
-            <h2
-                style="font-size: 36px; color: transparent; background: -webkit-linear-gradient(135deg, #C54ECC, #7C71FB); -webkit-background-clip: text; background-clip: text;">
-                Discover Our Investment Plans</h2>
-            <div class="plans-container">
-                <div class="plan" style="background-color: #ffeb99; border: 2px solid #ffeb99;">
-                    <h3 style="font-size: 24px; color: #b8860b; margin-bottom: 15px;">Gold Plan: Cryptocurrency
-                        Investment Assistance</h3>
-                    <p style="font-size: 18px; color: #333;">We help you invest in the right cryptocurrencies</p>
-                    <p style="font-size: 18px; color: #333;">Unlock the potential of cryptocurrency market</p>
-                    <p style="font-size: 18px; color: #333;">Experience the convenience of auto-trading</p>
-                    <a href="#" class="btn" style="background-color: #b8860b; color: #fff; font-size: 16px;">Learn
-                        More</a>
-                    <div class="popup">
-                        <span class="close-btn">&times;</span>
-                        <p>Detailed information about the Gold Plan will be shown here.</p>
-                    </div>
-                </div>
-                <div class="plan" style="background-color: #e6e6e6; border: 2px solid #e6e6e6;">
-                    <h3 style="font-size: 24px; color: #808080; margin-bottom: 15px;">Silver Plan: Cryptocurrency
-                        Auto-Trade</h3>
-                    <p style="font-size: 18px; color: #333;">Automate your cryptocurrency trading</p>
-                    <p style="font-size: 18px; color: #333;">Maximize your investment potential</p>
-                    <p style="font-size: 18px; color: #333;">Let technology work for you</p>
-                    <a href="#" class="btn" style="background-color: #808080; color: #fff; font-size: 16px;">Learn
-                        More</a>
-                    <div class="popup">
-                        <span class="close-btn">&times;</span>
-                        <p>Detailed information about the Silver Plan will be shown here.</p>
-                    </div>
-                </div>
-                <div class="plan" style="background-color: #ffcc80; border: 2px solid #ffcc80;">
-                    <h3 style="font-size: 24px; color: #8b4513; margin-bottom: 15px;">Bronze Plan: Cryptocurrency
-                        Portfolio Management</h3>
-                    <p style="font-size: 18px; color: #333;">Let us manage your cryptocurrency portfolio</p>
-                    <p style="font-size: 18px; color: #333;">Expert guidance for optimal returns</p>
-                    <p style="font-size: 18px; color: #333;">Peace of mind with professional management</p>
-                    <a href="#" class="btn" style="background-color: #8b4513; color: #fff; font-size: 16px;">Learn
-                        More</a>
-                    <div class="popup">
-                        <span class="close-btn">&times;</span>
-                        <p>Detailed information about the Bronze Plan will be shown here.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="statistics">
-        <h2>Investment Statistics</h2>
-        <div class="stats-container">
-            <div class="stat">
-                <i class="fas fa-users"></i>
-                <h3>Total Users</h3>
-                <p data-count="125">0</p>
-            </div>
-            <div class="stat">
-                <i class="fas fa-exchange-alt"></i>
-                <h3>Total Transactions</h3>
-                <p data-count="423">0</p>
-            </div>
-            <div class="stat">
-                <i class="fas fa-chart-line"></i>
-                <h3>Total Investments</h3>
-                <p data-count="546">0</p>
-            </div>
-            <div class="stat">
-                <i class="fas fa-chart-pie"></i>
-                <h3>Average Portfolio Size</h3>
-                <p data-count="1002">0</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="faqs">
-        <div class="container">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-item">
-                <h3 class="faq-question">What is an investment portfolio? <span class="arrow">&Darr;;</span></h3>
-                <p class="faq-answer">An investment portfolio is a collection of assets owned by an individual or
-                    institution, such as stocks, bonds, mutual funds, ETFs, real estate, and more. The purpose of a
-                    portfolio is to diversify investments and manage risk while aiming for returns.</p>
-            </div>
-            <div class="faq-item">
-                <h3 class="faq-question">How do I choose the right investment plan? <span class="arrow">&Darr;;</span>
-                </h3>
-                <p class="faq-answer">Choosing the right investment plan depends on your financial goals, risk
-                    tolerance, investment horizon, and other factors. It's essential to assess your needs and consult
-                    with a financial advisor if needed before making a decision.</p>
-            </div>
-            <div class="faq-item">
-                <h3 class="faq-question">What are the risks associated with investing? <span
-                        class="arrow">&Darr;;</span></h3>
-                <p class="faq-answer">Investing involves risks, including the potential loss of principal. Common risks
-                    include market volatility, economic downturns, inflation, interest rate changes, and specific risks
-                    associated with individual investments. It's important to understand and manage these risks when
-                    investing.</p>
-            </div>
-            <div class="faq-item">
-                <h3 class="faq-question">How can I monitor my investments? <span class="arrow">&Darr;;</span></h3>
-                <p class="faq-answer">Most investment platforms provide tools and resources for monitoring your
-                    investments. You can track your portfolio's performance, review transaction history, and receive
-                    updates on market conditions. Regularly monitoring your investments allows you to make informed
-                    decisions and adjust your strategy as needed.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="testimonial">
-        <h2>Client Testimonials</h2>
-        <div class="testimonial-slider">
-            <div class="testimonial-item">
-                <div class="testimonial-content">
-                    <img src="img/portrait-3157821_1280.jpg" alt="Client Avatar">
-                    <p class="quote">"Investing with CryptoJ has been a game-changer for me. Their expert guidance
-                        and personalized approach helped me navigate the complexities of the financial market, leading
-                        to significant returns on my investments."</p>
-                    <p class="author">- Jimmy</p>
-                </div>
-            </div>
-            <div class="testimonial-item">
-                <div class="testimonial-content">
-                    <img src="img/attractive-1869761_1280.jpg" alt="Client Avatar">
-                    <p class="quote">"I'm incredibly impressed with the investment opportunities provided by
-                        CryptoJ. Their diverse portfolio options and transparent communication have given me the
-                        confidence to achieve my financial goals faster than I ever imagined."</p>
-                    <p class="author">- Sarah</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>CryptoJ</p>
-               
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="index.html#investment-plans">Services</a></li>
-                    <li><a href="faq.html">FAQs</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                <div class="socials">
-                    <a href=""><box-icon name='facebook' type='logo'></box-icon></a>
-
-                    <!-- Twitter -->
-                    <a href=""><box-icon type='logo' name='twitter'></box-icon></a>
-
-                    <!-- Instagram -->
-                    <a href=""><box-icon name='instagram' type='logo'></box-icon></a>
-
-                    <!-- Linkedin -->
-                    <a href=""><box-icon name='linkedin' type='logo'></box-icon></a>
-
-                    <!-- Github -->
-                    <a href=""><box-icon name='github' type='logo'></box-icon></a>
-
-                    <!-- Whatsapp -->
-                    <a href=""><box-icon name='whatsapp' type='logo'></box-icon></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 CryptoJ. All rights reserved. <a href="TCs.html">Terms and conditions apply</a></p>
-        </div>
-    </footer>
-    <script>
-        // Show the loading screen
-        const loadingScreen = document.getElementById('loading-screen');
-        loadingScreen.style.display = 'flex'; // Show the loading screen initially
-
-        // Hide the loading screen after a minimum time (in milliseconds)
-        const minLoadingTime = 5000; // Adjust the time as needed (in milliseconds)
-        const startTime = Date.now();
-
-        function hideLoadingScreen() {
-            const elapsedTime = Date.now() - startTime;
-            const remainingTime = Math.max(0, minLoadingTime - elapsedTime);
-            setTimeout(function () {
-                loadingScreen.style.display = 'none';
-            }, remainingTime);
-        }
-
-        // Hide the loading screen when the DOM content is loaded
-        document.addEventListener('DOMContentLoaded', hideLoadingScreen);
-    </script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Get the menu icon element
-            const menuIcon = document.querySelector('.menu-icon');
-            // Get the navbar element
-            const navbar = document.querySelector('.navbar');
-
-            // Add click event listener to the menu icon
-            menuIcon.addEventListener('click', function () {
-                // Toggle the 'active' class on the navbar
-                navbar.classList.toggle('active');
-            });
-        });
-
-    </script>
-    <script>
-        function toggleAnswer(question) {
-            const answer = question.nextElementSibling;
-            const arrow = question.querySelector('.arrow');
-            if (answer.style.display === 'block') {
-                answer.style.display = 'none';
-                arrow.classList.remove('rotate');
-            } else {
-                answer.style.display = 'block';
-                arrow.classList.add('rotate');
-            }
-        }
-
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => toggleAnswer(question));
-        });
-    </script>
-
-    <script>
-        function checkVisibility() {
-            const galleryItems = document.querySelectorAll('.gallery-item');
-            const windowHeight = window.innerHeight;
-
-            galleryItems.forEach(item => {
-                const position = item.getBoundingClientRect().top;
-                if (position < windowHeight * 0.9) {
-                    item.classList.add('show');
-                } else {
-                    item.classList.remove('show');
-                }
-            });
-        }
-
-        window.addEventListener('scroll', checkVisibility);
-        window.addEventListener('resize', checkVisibility);
-        window.addEventListener('load', checkVisibility);
-
-        // JavaScript function to toggle menu visibility
-        document.addEventListener('DOMContentLoaded', function () {
-            var menuBtn = document.getElementById('menuBtn');
-            var navLinks = document.getElementById('navLinks');
-
-            menuBtn.addEventListener('click', function () {
-                if (navLinks.style.display === 'block') {
-                    navLinks.style.display = 'none';
-                } else {
-                    navLinks.style.display = 'block';
-                }
-            });
-        });
-
-
-    </script>
-    <script>
-        const stats = document.querySelectorAll('.stat p');
-
-        function countUp(element) {
-            const target = +element.getAttribute('data-count');
-            let current = 0;
-            const increment = Math.ceil(target / 100);
-
-            const timer = setInterval(() => {
-                current += increment;
-                element.textContent = current.toLocaleString();
-
-                if (current >= target) {
-                    element.textContent = target.toLocaleString();
-                    clearInterval(timer);
-                }
-            }, 50);
-        }
-
-        function handleScroll() {
-            stats.forEach(stat => {
-                const statPosition = stat.getBoundingClientRect().top;
-                const screenHeight = window.innerHeight;
-
-                if (statPosition < screenHeight) {
-                    countUp(stat);
-                }
-            });
-        }
-
-        window.addEventListener('scroll', handleScroll);
-
-    </script>
-
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-
-        // app.js
-
-        document.addEventListener("DOMContentLoaded", function () {
-            const testimonialItems = document.querySelectorAll(".testimonial-item");
-            let currentIndex = 0;
-
-            function showTestimonial(index) {
-                testimonialItems.forEach((item, i) => {
-                    if (i === index) {
-                        item.classList.add("active"); // Show the selected testimonial
-                    } else {
-                        item.classList.remove("active"); // Hide other testimonials
-                    }
-                });
-            }
-
-            function nextTestimonial() {
-                currentIndex++;
-                if (currentIndex >= testimonialItems.length) {
-                    currentIndex = 0; // Loop back to the first testimonial
-                }
-                showTestimonial(currentIndex);
-            }
-
-            // Show the first testimonial when the page loads
-            showTestimonial(currentIndex);
-
-            // Automatically switch to the next testimonial every 5 seconds
-            setInterval(nextTestimonial, 5000);
-        });
-    </script>
-
-    <script src="https://www.cryptohopper.com/widgets/js/script"></script>
-    <script src="js/script.js"></script>
-    <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
